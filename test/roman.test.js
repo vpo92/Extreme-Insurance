@@ -56,6 +56,18 @@ describe('Test Roman', function(){
       done();
       //.to().eq("I").end(done);
     });
+
+    it('error value', function (done) {
+      expect(roman.all("")).to.eq(0);
+      expect(roman.all(null)).to.eq(0);
+      expect(roman.all({})).to.eq(0);
+      expect(roman.all([])).to.eq(0);
+      //...
+
+      done();
+      //.to().eq("I").end(done);
+    });
+
   });
 
 });

@@ -46,9 +46,7 @@ function Server (doLogRequests) {
 }
 
 
-if (!module.parent) {
-  var server = new Server(true);
-  server.start(function () {
-    console.log('server listening on port', server.address().port);
-  });
-}
+var server = new Server(true);
+server.start(function () {
+  console.log('server listening on port', server.address().port);
+});
