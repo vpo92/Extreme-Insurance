@@ -2,7 +2,7 @@
   "name": "carpaccio-client-express",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha test"
   },
@@ -20,8 +20,8 @@
     "express": "^4.13.3",
     "morgan": "^1.6.1",
     "request": "^2.67.0",
-    "moment":"*",
-	  "log4js": "~0.6.29"
+    "moment": "^2.17.1",
+    "log4js": "~0.6.29"
   },
   "scripts": {
     "start": "node server.js"
