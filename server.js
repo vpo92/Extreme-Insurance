@@ -32,9 +32,13 @@ function Server (doLogRequests) {
   });
  app.post('/quote', function (req, res, next) {
     routes.quote(req, res, next);
+    //routes.defQuote(req, res, next);
   });
+  app.post('/quote2', function (req, res, next) {
+     routes.quote(req, res, next);
+     //routes.defQuote(req, res, next);
+   });
 
-  
   var server = http.createServer(app);
   server.start = server.listen.bind(server, process.env.PORT || 3000);
   server.stop = server.close.bind(server);
