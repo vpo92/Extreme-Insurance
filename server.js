@@ -3,6 +3,11 @@ var express = require('express');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var routes = require('./lib/routes');
+var log4js = require('log4js');
+
+log4js.replaceConsole();
+var logger = log4js.getLogger('main');
+
 
 module.exports = Server;
 
