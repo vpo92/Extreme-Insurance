@@ -5,6 +5,9 @@ var bodyParser = require('body-parser');
 var routes = require('./lib/routes');
 var log4js = require('log4js');
 
+var appInsights = require("applicationinsights");
+appInsights.setup("cd444149-7d8c-4d62-8262-074a11443c50").start();
+
 log4js.replaceConsole();
 var logger = log4js.getLogger('main');
 

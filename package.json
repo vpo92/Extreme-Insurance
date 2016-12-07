@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "mocha test"
   },
   "author": "",
@@ -16,17 +17,12 @@
     "supertest": "^1.1.0"
   },
   "dependencies": {
+    "applicationinsights": "^0.17.0",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
-    "morgan": "^1.6.1",
-    "request": "^2.67.0",
+    "log4js": "~0.6.29",
     "moment": "^2.17.1",
-    "log4js": "~0.6.29"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "test": "mocha test"
-
-  },
-  "main": "server.js"
+    "morgan": "^1.6.1",
+    "request": "^2.67.0"
+  }
 }
